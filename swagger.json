@@ -5,48 +5,13 @@
     "description": "Retrieve data for an authenticated user through web tokens making REST requests GET, POST, PUT, DELETE from a Tasks database in MongoDB.",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "https://project2-58ck.onrender.com",
   "basePath": "/",
   "schemes": [
     "http",
     "https"
   ],
   "paths": {
-    "/auth/login": {
-      "get": {
-        "tags": [
-          "Authentication"
-        ],
-        "description": "Iniciar sesión utilizando GitHub OAuth",
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      }
-    },
-    "/auth/logout": {
-      "get": {
-        "tags": [
-          "Authentication"
-        ],
-        "description": "Cerrar sesión",
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      }
-    },
     "/movies": {
       "get": {
         "tags": [

@@ -4,9 +4,13 @@ const swaggerDocument = require('../swagger.json');
 const passport = require("passport");
 
 router.get('/', (req, res) => {
+
+    console.log('req session user', req.session.user);
+
+
     res.send(
         req.session.user !== undefined
-            ? `Logged in as ${req.session.user.displayName}` : "Logged Out")
+            ? `Logged in as ${req.session.user.displayName || req.session.user.username}` : "Logged Out")
 });
 
 router.get('/github/callback', passport.authenticate('github', {
