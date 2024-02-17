@@ -5,11 +5,11 @@
     "description": "Retrieve data for an authenticated user through web tokens making REST requests GET, POST, PUT, DELETE from a Tasks database in MongoDB.",
     "version": "1.0.0"
   },
-  "host": "https://project2-58ck.onrender.com",
+  "host": "project2-58ck.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
-    "https"
+    "https",
+    "http"
   ],
   "paths": {
     "/movies": {
