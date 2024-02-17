@@ -12,10 +12,4 @@ router.get('/logout', function (req, res, next) {
     });
 });
 
-router.get('/test', (req, res) => {
-    res.send({
-        message: 'This is a test message'
-    })
-})
-
 module.exports = router;
